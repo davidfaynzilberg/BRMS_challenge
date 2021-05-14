@@ -1,0 +1,12 @@
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\bin\Debug\netcoreapp3.1\BRMSTools.DAL.deps.json
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\bin\Debug\netcoreapp3.1\BRMSTools.DAL.dll
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\bin\Debug\netcoreapp3.1\BRMSTools.DAL.pdb
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\bin\Debug\netcoreapp3.1\BRMSTools.Common.dll
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\bin\Debug\netcoreapp3.1\BRMSTools.Common.pdb
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\obj\Debug\netcoreapp3.1\BRMSTools.DAL.csprojAssemblyReference.cache
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\obj\Debug\netcoreapp3.1\BRMSTools.DAL.AssemblyInfoInputs.cache
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\obj\Debug\netcoreapp3.1\BRMSTools.DAL.AssemblyInfo.cs
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\obj\Debug\netcoreapp3.1\BRMSTools.DAL.csproj.CoreCompileInputs.cache
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\obj\Debug\netcoreapp3.1\BRMSTools.DAL.csproj.CopyComplete
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\obj\Debug\netcoreapp3.1\BRMSTools.DAL.dll
+C:\Users\David Faynzilberg\source\repos\BRMSTools.DAL\obj\Debug\netcoreapp3.1\BRMSTools.DAL.pdb

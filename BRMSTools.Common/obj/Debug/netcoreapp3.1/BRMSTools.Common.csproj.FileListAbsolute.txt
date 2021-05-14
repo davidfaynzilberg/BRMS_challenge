@@ -1,0 +1,9 @@
+C:\Users\David Faynzilberg\source\repos\BRMSTools.Common\bin\Debug\netcoreapp3.1\BRMSTools.Common.deps.json
+C:\Users\David Faynzilberg\source\repos\BRMSTools.Common\bin\Debug\netcoreapp3.1\BRMSTools.Common.dll
+C:\Users\David Faynzilberg\source\repos\BRMSTools.Common\bin\Debug\netcoreapp3.1\BRMSTools.Common.pdb
+C:\Users\David Faynzilberg\source\repos\BRMSTools.Common\obj\Debug\netcoreapp3.1\BRMSTools.Common.csprojAssemblyReference.cache
+C:\Users\David Faynzilberg\source\repos\BRMSTools.Common\obj\Debug\netcoreapp3.1\BRMSTools.Common.AssemblyInfoInputs.cache
+C:\Users\David Faynzilberg\source\repos\BRMSTools.Common\obj\Debug\netcoreapp3.1\BRMSTools.Common.AssemblyInfo.cs
+C:\Users\David Faynzilberg\source\repos\BRMSTools.Common\obj\Debug\netcoreapp3.1\BRMSTools.Common.csproj.CoreCompileInputs.cache
+C:\Users\David Faynzilberg\source\repos\BRMSTools.Common\obj\Debug\netcoreapp3.1\BRMSTools.Common.dll
+C:\Users\David Faynzilberg\source\repos\BRMSTools.Common\obj\Debug\netcoreapp3.1\BRMSTools.Common.pdb

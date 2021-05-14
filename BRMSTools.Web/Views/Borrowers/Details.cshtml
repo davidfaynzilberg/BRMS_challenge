@@ -1,0 +1,36 @@
+﻿@model SimpleWebAppMVC.Models.Borrower
+
+@{
+    ViewData["Title"] = "Task Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+
+<div class="jumbotron">
+    <div>
+        <dl class="dl-horizontal">
+            <dt>@Html.DisplayNameFor(model => model.Name)</dt>
+            <dd>@Html.DisplayFor(model => model.Name)</dd>
+            <dt>@Html.DisplayNameFor(model => model.SSN)</dt>
+            <dd>@Html.DisplayFor(model => model.SSN)</dd>
+            <dt>@Html.DisplayNameFor(model => model.Dob)</dt>
+            <dd>@Html.DisplayFor(model => model.Dob)</dd>
+            <dt>@Html.DisplayNameFor(model => model.Address)</dt>
+            <dd>@Html.DisplayFor(model => model.Address)</dd>
+            <dt>@Html.DisplayNameFor(model => model.Status)</dt>
+            <dd>@Html.DisplayFor(model => model.Status)</dd>
+            <dt>@Html.DisplayNameFor(model => model.Crimeid)</dt>
+            <dd>@Html.DisplayFor(model => model.Crimeid)</dd>
+            <dt>@Html.DisplayNameFor(model => model.Score)</dt>
+            <dd>@Html.DisplayFor(model => model.Score)</dd>
+            <dt>@Html.DisplayNameFor(model => model.Date)</dt>
+            <dd>@Html.DisplayFor(model => model.Date)</dd>
+        </dl>
+    </div>
+
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

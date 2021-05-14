@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SimpleWebAppMVC.Models.Borrower>
+
+@{
+    ViewData["Title"] = "Borrowers";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="jumbotron">
+    <p><a asp-action="Create">Create New Borrower</a></p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.ActionLink("Name", "Index", new { sort = ViewBag.TitleSortParm })</th>
+                <th>@Html.ActionLink("SSN", "Index", new { sort = ViewBag.SSNSortParm })</th>
+                <th>@Html.ActionLink("Dob", "Index", new { sort = ViewBag.DobSortParm })</th>
+                <th>@Html.ActionLink("Address", "Index", new { sort = ViewBag.AddressSortParm })</th>
+                <th>@Html.ActionLink("Status", "Index", new { sort = ViewBag.StatusSortParm })</th>
+                <th>@Html.ActionLink("Crime Id", "Index", new { sort = ViewBag.CrimeIdSortParm })</th>
+                <th>@Html.ActionLink("Score", "Index", new { sort = ViewBag.ScoreSortParm })</th>
+                <th>@Html.ActionLink("Date", "Index", new { sort = ViewBag.DateSortParm })</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model) {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.SSN)</td>
+                <td>@Html.DisplayFor(modelItem => item.Dob)</td>
+                <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                <td>@Html.DisplayFor(modelItem => item.Crimeid)</td>
+                <td>@Html.DisplayFor(modelItem => item.Score)</td>
+                <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+    <div>@Html.ActionLink("Download JSON", "GetJSON", new { sort = @ViewData["sortJSON"] })</div>
+</div>

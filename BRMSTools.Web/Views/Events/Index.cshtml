@@ -1,0 +1,36 @@
+﻿@model IEnumerable<SimpleWebAppMVC.Models.Events>
+
+@{ ViewData["Title"] = "Events"; }
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="jumbotron">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.ActionLink("Source", "Index", new { sort = ViewBag.SourceSortParm })</th>
+                <th>@Html.ActionLink("Event", "Index", new { sort = ViewBag.EventSortParm })</th>
+                <th>@Html.ActionLink("Description", "Index", new { sort = ViewBag.DescriptionSortParm })</th>
+                <th>@Html.ActionLink("Date", "Index", new { sort = ViewBag.DateSortParm })</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Source)</td>
+                <td>@Html.DisplayFor(modelItem => item.Event)</td>
+                <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>            }
+        </tbody>
+    </table>
+
+    <div>@Html.ActionLink("Download JSON", "GetJSON", new { sort = @ViewData["sortJSON"] })</div>
+</div>
