@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MySql.Data.MySqlClient;
+using SignalRDemo.Hubs;
 using SimpleWebAppMVC.Data;
 using System;
 using System.Data;
@@ -50,6 +51,8 @@ namespace SimpleWebAppMVC
             }
 
             services.AddMvc(options => options.EnableEndpointRouting = false);
+
+            services.AddSignalR();
         }
 
         private string CheckMySQLDatabaseConnection(string connectionString)
@@ -102,6 +105,13 @@ namespace SimpleWebAppMVC
 
             // Register routes
             app.UseMvc(routes => routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}"));
+
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapHub<NotificationHub>("/NotificationHub");
+            });
         }
     }
 }

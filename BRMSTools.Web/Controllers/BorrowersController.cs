@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SimpleWebAppMVC.Data;
+using Microsoft.AspNetCore.SignalR;
+using SignalRDemo.Hubs;
 
 namespace SimpleWebAppMVC.Controllers
 {
@@ -17,7 +19,7 @@ namespace SimpleWebAppMVC.Controllers
          * BorrowerController constructor.
          * @param dbCtx Application database context
          */
-        public BorrowersController(AppDbContext dbCtx)
+        public BorrowersController(AppDbContext dbCtx, IHubContext<NotificationHub> notificationHubContext)
         {
             this.dbContext = dbCtx;
         }

@@ -1,4 +1,5 @@
 ﻿using BRMSTools.API.v1.Models;
+using BRMSWebApp.Hubs;
 using Microsoft.Extensions.Configuration;
 using MySqlConnector;
 using Newtonsoft.Json.Linq;
@@ -123,6 +124,7 @@ namespace BRMSTools.API.Helpers
             }//Exception
             finally
             {
+                new NotificationHelper().NotificationCaller(eventSource, msg);
                 mySqlConnection.Close();
             }
         }

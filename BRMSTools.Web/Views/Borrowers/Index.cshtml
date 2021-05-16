@@ -25,25 +25,43 @@
         </thead>
 
         <tbody>
-            @foreach (var item in Model) {
-            <tr>
-                <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                <td>@Html.DisplayFor(modelItem => item.SSN)</td>
-                <td>@Html.DisplayFor(modelItem => item.Dob)</td>
-                <td>@Html.DisplayFor(modelItem => item.Address)</td>
-                <td>@Html.DisplayFor(modelItem => item.Status)</td>
-                <td>@Html.DisplayFor(modelItem => item.Crimeid)</td>
-                <td>@Html.DisplayFor(modelItem => item.Score)</td>
-                <td>@Html.DisplayFor(modelItem => item.Date)</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.SSN)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Dob)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Crimeid)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Score)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
             }
         </tbody>
     </table>
+
+    <div class="text-center" style="padding: 20px;">
+        <hr>
+        <h4>Alerts</h4>
+        <div id="articleList"></div>
+        <hr>
+    </div>
+
+    <script>
+        function ready() {
+        }
+        //random number between 1 and 100 for demo
+        var userId = Math.floor((Math.random() * 100) + 1); document.addEventListener("DOMContentLoaded", ready);
+    </script>
+
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/notification.js"></script>
 
     <div>@Html.ActionLink("Download JSON", "GetJSON", new { sort = @ViewData["sortJSON"] })</div>
 </div>

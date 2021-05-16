@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BRMSTools.API.Utilities\BRMSTools.API.Utilities.csproj" />
     <ProjectReference Include="..\BRMSTools.Common\BRMSTools.Common.csproj" />
+    <ProjectReference Include="..\BRMSTools.Web\BRMSWebApp.csproj" />
   </ItemGroup>
 
 
